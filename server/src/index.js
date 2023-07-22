@@ -16,8 +16,6 @@ app.use(cors({origin:'http://localhost:4200'}));
 app.use('/api/ToLearn',require('./routers/main/main.main'));
 
 
-
-
 //start server
 app.listen(app.get('port'),()=>{
     console.log('Server on port: ',app.get('port'));
